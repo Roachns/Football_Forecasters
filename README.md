@@ -14,3 +14,7 @@ We'll compute stats for every FBS vs FBS game from 2008-2016.  Once the model ha
 
 Additonal goals:
 * explore other stats beyond the ones listed above to fine tune the model
+
+Visualization concept:
+
+![](example_stats.PNG)

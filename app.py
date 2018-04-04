@@ -1,6 +1,7 @@
 from flask import Flask, jsonify, render_template, request
 import pandas as pd
 import math
+import json
 
 data = pd.read_csv('Data/2017_team_data.csv')
 
@@ -72,27 +73,28 @@ def get_game():
             'Win probability': game_prob[0],
             'Team': team_data['A'][1],
             'Abbr': team_data['A'][0],
-            'OPASS': team_data['A'][3],
-            'ORUSH': team_data['A'][4],
-            'OINT': team_data['A'][5],
-            'DPASS': team_data['A'][6],
-            'DRUSH': team_data['A'][7],
-            'TPEN': team_data['A'][8],
+            'OPASS': round(team_data['A'][3], 2),
+            'ORUSH': round(team_data['A'][4], 2),
+            'OINT': round(team_data['A'][5], 2),
+            'DPASS': round(team_data['A'][6], 2),
+            'DRUSH': round(team_data['A'][7], 2),
+            'TPEN': round(team_data['A'][8], 2)
         },
         {
             'Win probability': game_prob[1],
             'Team': team_data['B'][1],
             'Abbr': team_data['B'][0],
-            'OPASS': team_data['B'][3],
-            'ORUSH': team_data['B'][4],
-            'OINT': team_data['B'][5],
-            'DPASS': team_data['B'][6],
-            'DRUSH': team_data['B'][7],
-            'TPEN': team_data['B'][8],
+            'OPASS': round(team_data['B'][3], 2),
+            'ORUSH': round(team_data['B'][4], 2),
+            'OINT': round(team_data['B'][5], 2),
+            'DPASS': round(team_data['B'][6], 2),
+            'DRUSH': round(team_data['B'][7], 2),
+            'TPEN': round(team_data['B'][8], 2)
         }
     ]
 
-    return jsonify(results)
+    #return jsonify(results)
+    return json.dumps(results)
 
 
 if __name__ == "__main__":

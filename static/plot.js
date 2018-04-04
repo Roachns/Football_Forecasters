@@ -16,7 +16,6 @@ function plot_donut(ateam, bteam) {
 
     d3.json(route, function(error, data) {
         if (error) throw error;
-        console.log(data);
         d3.select('#chart')
             .datum(data) // bind data to the div
             .call(donut); // draw chart in div
@@ -172,19 +171,30 @@ function plot_donut(ateam, bteam) {
 
                     var tip = '',
                         i   = 0;
+                    
+                    tip += '<tspan x="0" y="-40">' + 'Win probability: ' + percentFormat(data.data['Win probability']) + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + 'Abbreviation: ' + data.data['Abbr'] + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">---------------</tspan>';
 
-                    for (var key in data.data) {
+                    tip += '<tspan x="0" dy="1.2em">' + 'OPASS: ' + data.data['OPASS'] + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + 'ORUSH: ' + data.data['ORUSH'] + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + ' OINT: ' + data.data['OINT'] + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + 'DPASS: ' + data.data['DPASS'] + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + 'DRUSH: ' + data.data['DRUSH'] + '</tspan>';
+                    tip += '<tspan x="0" dy="1.2em">' + ' TPEN: ' + data.data['TPEN'] + '</tspan>';
+
+                    /*for (var key in data.data) {
 
                         // if value is a number, format it as a percentage
                         var value = data.data[key]//(!isNaN(parseFloat(data.data[key]))) ? percentFormat(data.data[key]) : data.data[key];
 
                         // leave off 'dy' attr for first tspan so the 'dy' attr on text element works. The 'dy' attr on
                         // tspan effectively imitates a line break.
-                        if (i === 0) tip += '<tspan x="0">' + key + ': ' + percentFormat(value) + '</tspan>';
+                        if (i === 0) tip += '<tspan x="0" y="-30">' + key + ': ' + percentFormat(value) + '</tspan>';
                         else if (key == "Team") continue;
                         else tip += '<tspan x="0" dy="1.2em">' + key + ': ' + value + '</tspan>';
                         i++;
-                    }
+                    }*/
 
                     return tip;
                 }

@@ -24,10 +24,9 @@ createDropdowns();
 
 function createDropdowns() {
     var teams_route = '/teams/';
-    console.log(teams_route);
+    
     d3.json(teams_route, function(error, data) {
         if (error) throw error;
-        console.log(data);
 
         d3.select('#dropdown-a')
             .append('select')

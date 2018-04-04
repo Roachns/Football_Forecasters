@@ -50,7 +50,7 @@ def index():
 
 @app.route('/teams/')
 def get_teams():
-    teams = []
+    teams = [{'TEAM':'default', 'NAME':'Choose Team'}]
 
     for index, row in data.iterrows():
         team = row['TEAM']

@@ -48,6 +48,16 @@ def index():
     return render_template('index.html')
 
 
+@app.route('/about/')
+def project_about():
+    return render_template('about.html')
+
+
+@app.route('/team/')
+def project_team():
+    return render_template('team.html')
+
+
 @app.route('/teams/')
 def get_teams():
     teams = [{'TEAM':'default', 'NAME':'Choose Team'}]

@@ -92,7 +92,7 @@ function plot_donut(ateam, bteam) {
                     .data(pie)
                 .enter().append('text')
                     .attr('dy', '.35em')
-                    .style('fill', 'orange')
+                    .style('fill', 'white')
                     .html(function(d) {
                         // add "key: value" for given category. Number inside tspan is bolded in stylesheet.
                         return d.data[category] + ': <tspan>' + percentFormat(d.data[variable]) + '</tspan>';
@@ -150,13 +150,14 @@ function plot_donut(ateam, bteam) {
                             .attr('dy', -15) // hard-coded. can adjust this to adjust text vertical alignment in tooltip
                             .html(toolTipHTML(data)) // add text to the circle.
                             .style('font-size', '.9em')
+                            .style('fill', 'white')
                             .style('text-anchor', 'middle'); // centres text in tooltip
 
                         svg.append('circle')
                             .attr('class', 'toolCircle')
                             .attr('r', radius * 0.55) // radius of tooltip circle
                             .style('fill', colour(data.data[category])) // colour based on category mouse is over
-                            .style('fill-opacity', 0.35);
+                            .style('fill-opacity', 0.0);
 
                     });
 

@@ -92,6 +92,7 @@ function plot_donut(ateam, bteam) {
                     .data(pie)
                 .enter().append('text')
                     .attr('dy', '.35em')
+                    .style('fill', 'orange')
                     .html(function(d) {
                         // add "key: value" for given category. Number inside tspan is bolded in stylesheet.
                         return d.data[category] + ': <tspan>' + percentFormat(d.data[variable]) + '</tspan>';

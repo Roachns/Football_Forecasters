@@ -67,7 +67,7 @@ def get_teams():
         name = row['NAME']
         teams.append({'TEAM':team, 'NAME':name})
     
-    return jsonify(teams)
+    return json.dumps(teams)
 
 
 @app.route('/game/')

@@ -1,0 +1,131 @@
+
+body, html{
+    height: 100%;
+    margin: 0;
+    padding-top: 0;
+    font-size: 16px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    line-height: 1.6em;
+    color:#ddd;
+    background-color: #000;
+}
+
+
+.div-inline{
+    display:inline-block;
+}
+
+section form{
+    display: inline-block;
+    width: 100;
+}
+
+.section{
+    text-align: center;
+    padding: 50px 80px;
+}
+
+.top{
+    position: relative;
+    background-image: url('../assets/helmet5.jpeg');
+    min-height: 600px;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.75;
+}
+
+.hr-about{
+    color: #808080;
+    background-color: #808080;
+    height: 5px;
+}
+.section-1{
+    text-align: center;
+    padding: 20px 20px;
+}
+
+.container-algorithm{
+    padding: 0px 200px 200px 200px;
+    font-size: 18px;
+}
+.container-team{
+    padding: 20px 250px;
+    color: #ddd;
+    text-align: center;
+    font-size: 24px;
+}
+
+.container-marketing{
+    padding: 5px 125px;
+    background-color: #000;
+    color: #ddd;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    
+}
+
+.container-what{
+    padding: 5px 200px;
+    text-align: center;
+    font-size: 24px;
+}
+ul{
+    list-style-position: inside;
+}
+.section-2{
+    padding: 70px 20px 200px 20px;
+}
+.ptext{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color:#ddd;
+    font-size: 48px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.h2-matchup{
+    font-size: 24px;
+    color: #cd5c5c;
+    font-weight: 400;
+    
+}
+.h2-what{
+    font-weight: bold;
+    font-size: 48px;
+    color: #cd5c5c;
+    text-align: center;
+    padding: 50px
+}
+.h2-team{
+  font-weight: bold;
+  font-size: 48px;
+  color: #cd5c5c;  
+}
+
+.h2-algorithm{
+    font-weight: bold;
+    font-size: 48px;
+    color: #cd5c5c;
+}
+.h5-name{
+    font-weight: 400;
+    color:#20B2AA;
+}
+
+
+.navbar-brand {
+    color: #ddd !important;
+    font-weight: bold;
+}
+
+
+
+
+  

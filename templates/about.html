@@ -59,11 +59,66 @@
                         <li>Home field advantage</li>
                 </ul>
               </div>
+              <div ></div>
               <div class="col-lg-6">
-                    <img src="{{url_for('static', filename='assets/co-table.png')}}" alt="Stu" width="200" height="275" align="right">
-                    
+                    <table style="width:100%" border="1">
+                      <tr>
+                        <th>Coefficents</th>
+                        <th>Value</th> 
+                      </tr>
+                      <tr>
+                        <td>OPASS</td>
+                        <td>1.41</td> 
+                      </tr>
+                      <tr>
+                        <td>ORUSH</td>
+                        <td>0.92</td> 
+                      </tr>
+                      <tr>
+                        <td>OINT</td>
+                        <td>-0.64</td> 
+                      </tr>
+                      <tr>
+                        <td>DPASS</td>
+                        <td>-1.44</td> 
+                      </tr>
+                      <tr>
+                        <td>DRUSH</td>
+                        <td>-1.06</td> 
+                      </tr>
+                      <tr>
+                        <td>TPEN</td>
+                        <td>-0.24</td> 
+                      </tr>
+                      <tr>
+                        <td>HOME</td>
+                        <td>0.13</td> 
+                      </tr>
+                      <tr>
+                        <td>CONST</td>
+                        <td>-0.03</td>
+                      </tr>
+                    </table>
               </div>
           </div>
+      </div>
+      <h2 class="h2-formula">The Forumulas</h2>
+      <div class ="container-formula">
+        <p>Efficiency values were calculated using the following formulas:</p>
+        <ul>
+          <li>*OPASS* Offensive net passing yards per attempt
+            (Pass_yds-Sack_yds)/(Pass_att+Sacks_tot )</li>
+          <li>*ORUSH* Offensive rushing yards per attempt
+            (Rush_yds)/(Rush_att ) </li>
+          <li>*OINT* Offensive interceptions per attempt
+            (Int_tot)/(Pass_att )</li>
+          <li>*DPASS* Defensive net passing yards per attempt
+            (OppPass_yds)/(OppPass_att )</li>
+          <li>*DRUSH* Defensive rushing yards per attempt
+            (OppRush_yds)/(OppRush_att )</li>
+          <li>*TPEN* Team penalty yards per play
+            (Penalty_yds)/(Plays_tot )</li>
+      </ul>
       </div>
         
 

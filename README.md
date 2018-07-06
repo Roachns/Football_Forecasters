@@ -1,4 +1,5 @@
 # Football_Forecasters
+![](https://github.com/Roachns/Football_Forecasters/blob/master/static/assets/helmet5.jpeg)
 
 Use logistic regression from sklearn to train a model that will generate win probabilties for college football games.  We will use a variety of football efficiency stats to train the model.  Example stats:
 * offensive net passing yards per attempt

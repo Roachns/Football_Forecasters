@@ -16,4 +16,5 @@ We'll compute stats for every FBS vs FBS game from 2008-2016.  Once the model ha
 Additonal goals:
 * explore other stats beyond the ones listed above to fine tune the model
 
-
+## Finalized App
+[Football Forecaster App](https://afternoon-sierra-74595.herokuapp.com/)
